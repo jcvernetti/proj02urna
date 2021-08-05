@@ -6,6 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URNA ELETRÔNICA</title>
+    <style>
+        .ch1Titulo{
+            font-weight: bold;
+            color: brown;
+        }
+        .cl01{
+            border-radius: 45px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: rgb(240, 229, 215);
+        }
+        .cl02{
+            border-radius: 45px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background-color: rgb(245, 243, 238);
+        }
+        .cl03{
+            border-radius: 45px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            background-color: rgb(241, 240, 215);
+        }
+        .cEleitor{
+            font-weight: bolder;
+            font-style: italic;
+        }
+        .candA{
+            color: darkslateblue;
+        }
+        .candB{
+            color: rgb(139, 121, 61);
+            font-size: small;
+        }
+        .candC{
+            color: rgb(139, 64, 61);
+            font-size: larger;
+        }
+        .candD{
+            color: rgb(61, 139, 139);
+            font-weight: bolder;
+            font-style: italic;
+        }
+        .candE{
+            color: rgb(75, 61, 139);
+            font-weight: bolder;
+            font-style: italic;
+            font-size: larger;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -14,15 +65,15 @@
 Caso o  eleitor não se recorde do número de seu candidato ele poderá  selecionar o número do candidato de uma lista.
 [10:57 AM]
 A urna deverá contar com os botões "Confirmar", "Cancelar", "Branco"-->
-    <h1>
+    <h1 class="ch1Titulo">
         <center>URNA ELETRÔNICA</center>
     </h1>
     <form action="" method="GET" oninput="nmOut.value = nmRange.value">
-        <fieldset>
+        <fieldset class="cl01">
             <legend>Identificação do eleitor:</legend>
             <!-- Selecionar número do título de eleitor -->
             <br>
-            <label for="idListEleitores">Título de eleitor:</label>
+            <label class="cEleitor" for="idListEleitores">Título de eleitor:</label>
             <input list="eleitores" id="idListEleitores">
             <datalist id="eleitores">
                 <option value="01010">
@@ -36,32 +87,32 @@ A urna deverá contar com os botões "Confirmar", "Cancelar", "Branco"-->
         </fieldset>
 
         <br>
-        <fieldset>
+        <fieldset class="cl02">
             <legend>Selecione o seu candidato:</legend>
             <!-- Selecione seu candidato: -->
             <br>
             <input type="radio" id="idRadio1" name="nmRadio" checked>
-            <label for="idRadio1">Candidato A</label>
+            <label class="candA" for="idRadio1">Candidato A</label>
             <br>
             <input type="radio" id="idRadio2" name="nmRadio">
-            <label for="idRadio2">Candidato B</label>
+            <label class="candB" for="idRadio2">Candidato B</label>
             <br>
             <input type="radio" id="idRadio3" name="nmRadio">
-            <label for="idRadio3">Candidato C</label>
+            <label class="candC" for="idRadio3">Candidato C</label>
             <br>
             <input type="radio" id="idRadio4" name="nmRadio">
-            <label for="idRadio4">Candidato D</label>
+            <label class="candD" for="idRadio4">Candidato D</label>
             <br>
             <input type="radio" id="idRadio5" name="nmRadio">
-            <label for="idRadio5">Candidato E</label>
+            <label class="candE" for="idRadio5">Candidato E</label>
             <br>
             <input type="radio" id="idRadio6" name="nmRadio">
-            <label for="idRadio6">Candidato F</label>
+            <label class="candF" for="idRadio6">Candidato F</label>
             <br><br>
         </fieldset>
 
         <br>
-        <fieldset>
+        <fieldset class="cl03">
             <legend>Para validar seu voto, clique em um dos botões abaixo:</legend>
             <br>
             <button type="submit">BT Confirmar</button>
