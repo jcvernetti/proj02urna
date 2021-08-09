@@ -1,0 +1,48 @@
+.ch1Titulo{
+    font-weight: bold;
+    color: brown;
+}
+.cl01{
+    border-radius: 45px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: rgb(240, 229, 215);
+}
+.cl02{
+    border-radius: 45px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgb(245, 243, 238);
+}
+.cl03{
+    border-radius: 45px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(241, 240, 215);
+}
+.cEleitor{
+    font-weight: bolder;
+    font-style: italic;
+}
+.candA{
+    color: darkslateblue;
+}
+.candB{
+    color: rgb(139, 121, 61);
+    font-size: small;
+}
+.candC{
+    color: rgb(139, 64, 61);
+    font-size: larger;
+}
+.candD{
+    color: rgb(61, 139, 139);
+    font-weight: bolder;
+    font-style: italic;
+}
+.candE{
+    color: rgb(75, 61, 139);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+}
